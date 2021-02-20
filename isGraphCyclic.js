@@ -30,8 +30,8 @@ class Graph {
 
         visited[vertex] = true;
         recStack[vertex] = true;
-        const nodeNeighbors = this.adjList[vertex];
 
+        const nodeNeighbors = this.adjList[vertex];
         for (let i = 0; i < nodeNeighbors.length; i++) {
             const currentNode = nodeNeighbors[i];
             console.log('Current Vertex: ', currentNode, 'Parent Vertex: ', vertex);
